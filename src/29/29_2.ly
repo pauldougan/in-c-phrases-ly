@@ -11,6 +11,7 @@ phrase = \relative c, {
 }
 
 \score {
+  \midi { }
   \defineBarLine ":" #'("" ":" "")
   \new Staff = "phrase" {
     \bar ":"
