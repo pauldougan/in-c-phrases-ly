@@ -24,19 +24,17 @@ first phrase's directory:
 * `1+2.ly` – First phrase transposed up two octaves
 * `1+3.ly` – First phrase transposed up three octaves
 
-## Generating SVGs
+## Generating SVGs, PDFs and MIDIs
 
 These Lilypond files require some features that are not available in the
 current stable version (2.18.2), so to generate assets you will need to use at
 least version 2.19.80. You also need to be running a UNIX-like operating system
 such as macOS, Linux, FreeBSD, etc.
 
-Running the build script at the root of the repo will generate all of the SVGs
+Running make at the root of the repo will generate all of the SVGs, PNGs and MIDIs
 and put them in a `build/` directory.
 
-```console
-$ ./build.sh
+```
+make build
 ```
 
-Lilypond can also generate PDFs and PNGs of the phrases, just modify the build
-script to suit your needs.
